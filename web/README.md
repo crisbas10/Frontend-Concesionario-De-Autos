@@ -1,15 +1,11 @@
-# Aplicación Angular (`web/`)
+# Proyecto Angular — Concesionario de Autos
 
-Este directorio es el **proyecto Angular** generado con Angular CLI 20.
-
-La documentación completa del frontend (stack, instalación, estructura, rutas, backend, CORS, etc.) está en el archivo **`../README.md`** de la carpeta padre (`frontend-programacion-de-software`).
+Ver el **README principal** en la carpeta raíz (`../README.md`) para instrucciones completas.
 
 ## Comandos rápidos
 
 ```bash
 npm install
-npm start          # http://localhost:4200
-npm run build      # salida en dist/
+npm start    # http://localhost:4200
+npm run build
 ```
-
-Desde la carpeta padre también puedes usar `npm start` (delega a este proyecto).
