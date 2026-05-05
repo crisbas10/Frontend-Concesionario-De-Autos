@@ -1,89 +1,68 @@
-# Concesionario de Autos — Frontend
+# 🚗 Concesionario de Autos - Frontend
 
-Frontend desarrollado en **Angular 19** + **Angular Material** para el sistema de gestión de un concesionario de autos.
+Este proyecto corresponde al desarrollo del frontend del sistema de concesionario de autos, el cual se integra con un backend previamente construido.
 
-## 🎥 Video demostrativo
+## 📌 Descripción
 
-> **[Ver video demostrativo aquí](https://REEMPLAZAR-CON-TU-ENLACE)**
->
-> _(Reemplaza el enlace de arriba con la URL de tu video en YouTube, Drive u otra plataforma antes de entregar)_
+La aplicación permite gestionar múltiples entidades del sistema mediante operaciones CRUD (Crear, Consultar, Actualizar y Eliminar), consumiendo los endpoints del backend.
+
+Las funcionalidades incluyen:
+
+* Gestión de clientes
+* Gestión de vehículos
+* Gestión de empleados
+* Gestión de ventas
+* Gestión de usuarios
+* Gestión de mantenimientos
+* Gestión de métodos de pago
+
+Toda la información se comunica con el backend y se almacena de forma persistente en la base de datos.
 
 ---
 
-## ⚙️ Requisitos previos
+## ⚙️ Ejecución del proyecto
 
-- **Node.js** v18 o superior — [Descargar](https://nodejs.org/)
-- **Backend** corriendo en `http://127.0.0.1:8000` (FastAPI)
-
----
-
-## 🚀 Instalación y ejecución
+### 1. Clonar el repositorio
 
 ```bash
-# 1. Entra a la carpeta del frontend
-cd concesionario-frontend/web
+git clone <URL_DEL_REPOSITORIO>
+```
 
-# 2. Instala las dependencias
+### 2. Instalar dependencias
+
+```bash
 npm install
+```
 
-# 3. Inicia el servidor de desarrollo
+### 3. Ejecutar el frontend
+
+```bash
 npm start
 ```
 
-Luego abre **http://localhost:4200** en tu navegador.
-
----
-
-## 🗂️ Módulos CRUD implementados
-
-| Módulo          | Crear | Consultar | Actualizar | Eliminar |
-|-----------------|-------|-----------|------------|---------|
-| Usuarios        | ✅    | ✅        | ✅         | ✅      |
-| Clientes        | ✅    | ✅        | ✅         | ✅      |
-| Empleados       | ✅    | ✅        | ✅         | ✅      |
-| Vehículos       | ✅    | ✅        | ✅         | ✅      |
-| Métodos de pago | ✅    | ✅        | ✅         | ✅      |
-| Mantenimientos  | ✅    | ✅        | ✅         | ✅      |
-| Ventas          | ✅    | ✅        | ✅         | ✅      |
-
----
-
-## 🔌 Configuración del backend
-
-La URL del backend se configura en:
+La aplicación estará disponible en:
 
 ```
-web/src/environments/environment.ts
-```
-
-```typescript
-export const environment = {
-  production: false,
-  apiUrl: 'http://127.0.0.1:8000',
-};
-```
-
-Asegúrate de que tu backend FastAPI tenga **CORS habilitado** para `http://localhost:4200`.
-
-En tu `main.py` debe tener algo como:
-
-```python
-from fastapi.middleware.cors import CORSMiddleware
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:4200"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+http://localhost:4200
 ```
 
 ---
 
-## 🛠️ Stack tecnológico
+## 🔗 Video demostrativo
 
-- Angular 19 (Standalone Components)
-- Angular Material 19
-- TypeScript 5.6
-- RxJS 7.8
+👉 Pega aquí el enlace de tu video:
+
+```
+AQUÍ_VA_TU_LINK_DE_VIDEO
+```
+
+---
+
+## 🎯 Evidencias incluidas en el video
+
+* Ejecución del frontend en entorno local
+* Integración con el backend
+* Operaciones CRUD completas
+* Persistencia de datos en la base de datos
+
+---
