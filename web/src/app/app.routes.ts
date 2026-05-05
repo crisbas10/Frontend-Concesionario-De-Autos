@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-
 import { auditUserGuard } from './core/audit-user.guard';
 
 export const routes: Routes = [
@@ -14,37 +13,13 @@ export const routes: Routes = [
     loadComponent: () => import('./features/shell/main-layout').then((m) => m.MainLayoutComponent),
     children: [
       { path: '', redirectTo: 'usuarios', pathMatch: 'full' },
-      {
-        path: 'usuarios',
-        loadComponent: () =>
-          import('./features/usuarios/usuario-list').then((m) => m.UsuarioListComponent),
-      },
-      {
-        path: 'categorias',
-        loadComponent: () =>
-          import('./features/categorias/categoria-list').then((m) => m.CategoriaListComponent),
-      },
-      {
-        path: 'productos',
-        loadComponent: () =>
-          import('./features/productos/producto-list').then((m) => m.ProductoListComponent),
-      },
-      {
-        path: 'pedidos',
-        loadComponent: () =>
-          import('./features/pedidos/pedido-list').then((m) => m.PedidoListComponent),
-      },
-      {
-        path: 'detalles-pedido',
-        loadComponent: () =>
-          import('./features/detalles-pedido/detalle-pedido-list').then(
-            (m) => m.DetallePedidoListComponent,
-          ),
-      },
-      {
-        path: 'pagos',
-        loadComponent: () => import('./features/pagos/pago-list').then((m) => m.PagoListComponent),
-      },
+      { path: 'usuarios', loadComponent: () => import('./features/usuarios/usuario-list').then((m) => m.UsuarioListComponent) },
+      { path: 'clientes', loadComponent: () => import('./features/clientes/cliente-list').then((m) => m.ClienteListComponent) },
+      { path: 'empleados', loadComponent: () => import('./features/empleados/empleado-list').then((m) => m.EmpleadoListComponent) },
+      { path: 'vehiculos', loadComponent: () => import('./features/vehiculos/vehiculo-list').then((m) => m.VehiculoListComponent) },
+      { path: 'metodos-pago', loadComponent: () => import('./features/metodos-pago/metodo-pago-list').then((m) => m.MetodoPagoListComponent) },
+      { path: 'mantenimientos', loadComponent: () => import('./features/mantenimientos/mantenimiento-list').then((m) => m.MantenimientoListComponent) },
+      { path: 'ventas', loadComponent: () => import('./features/ventas/venta-list').then((m) => m.VentaListComponent) },
     ],
   },
   { path: '**', redirectTo: 'login' },
