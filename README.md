@@ -1,8 +1,8 @@
-# 🚗 Concesionario de Autos - Frontend
+# Concesionario de Autos - Frontend
 
 Este proyecto corresponde al desarrollo del frontend del sistema de concesionario de autos, el cual se integra con un backend previamente construido.
 
-## 📌 Descripción
+##  Descripción
 
 La aplicación permite gestionar múltiples entidades del sistema mediante operaciones CRUD (Crear, Consultar, Actualizar y Eliminar), consumiendo los endpoints del backend.
 
@@ -20,7 +20,7 @@ Toda la información se comunica con el backend y se almacena de forma persisten
 
 ---
 
-## ⚙️ Ejecución del proyecto
+##  Ejecución del proyecto
 
 ### 1. Clonar el repositorio
 
@@ -48,17 +48,13 @@ http://localhost:4200
 
 ---
 
-## 🔗 Video demostrativo
+##  Video demostrativo
 
-👉 Pega aquí el enlace de tu video:
-
-```
-AQUÍ_VA_TU_LINK_DE_VIDEO
-```
+https://youtu.be/0peG8ltxQ0A
 
 ---
 
-## 🎯 Evidencias incluidas en el video
+##  Evidencias incluidas en el video
 
 * Ejecución del frontend en entorno local
 * Integración con el backend
