@@ -1,5 +1,6 @@
 [build]
-  command = "npm run build"
+  base = "web"
+  command = "npx ng build --configuration production"
   publish = "dist/web/browser"
 
 [[redirects]]
